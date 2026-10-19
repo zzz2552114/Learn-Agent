@@ -1,0 +1,23 @@
+[project]
+name = "learn-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "zhm", email = "zzz2552114@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "google-search-results>=2.4.2",
+    "httpx[socks]>=0.28.1",
+    "openai>=3.33.0",
+    "python-dotenv>=1.2.4",
+    "tavily-python>=0.8.5",
+]
+
+[project.scripts]
+learn-agent = "learn_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
